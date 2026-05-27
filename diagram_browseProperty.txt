@@ -1,0 +1,46 @@
+@startuml
+actor "Property Owner" as Owner
+boundary "UI" as UI
+entity "API Service" as API
+database "Database" as DB
+
+Owner -> UI : Log into account
+activate UI
+
+Owner -> UI : Select "Property" menu
+Owner -> UI : Click "Add Property"
+UI --> Owner : Display property creation form
+deactivate UI
+
+== Submit Property Listing ==
+Owner -> UI : Enter property details
+activate UI
+
+Owner -> UI : Click "Submit for Review"
+
+UI -> API : Send property data
+activate API
+
+API -> API : Validate data completeness\nand format
+
+alt Valid Data
+    API -> DB : Save property listing\nstatus = "Pending Approval"
+    activate DB
+    DB --> API : Property saved
+    deactivate DB
+
+    API --> UI : Success response
+    deactivate API
+
+    UI --> Owner : Redirect with success banner
+    deactivate UI
+
+else Invalid Data
+    API --> UI : Return validation errors
+    deactivate API
+
+    UI --> Owner : Show error messages
+    deactivate UI
+end
+
+@enduml

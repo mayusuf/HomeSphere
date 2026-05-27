@@ -1,0 +1,47 @@
+@startuml
+actor Customer
+boundary "UI" as UI
+entity "API Service" as API
+database "Database" as DB
+
+Customer -> UI : Open homepage
+activate UI
+
+UI -> API : Request active property listings
+activate API
+
+API -> DB : Fetch active listings
+activate DB
+
+DB --> API : Property list
+deactivate DB
+
+API --> UI : Property data
+deactivate API
+
+UI --> Customer : Display property list
+deactivate UI
+
+== Apply Filter ==
+Customer -> UI : Select category filter
+Customer -> UI : Enter city
+Customer -> UI : Set price range
+Customer -> UI : Click "Apply Filter"
+
+UI -> API : Send filter criteria\n(category, city, minPrice, maxPrice)
+activate UI
+activate API
+
+API -> DB : Query matching properties
+activate DB
+
+DB --> API : Filtered properties
+deactivate DB
+
+API --> UI : Matching property list
+deactivate API
+
+UI --> Customer : Refresh and display results
+deactivate UI
+
+@enduml
