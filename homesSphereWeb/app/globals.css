@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary: #2563EB;
+  --color-accent: #F4A535;
+  --color-surface: #F8F6F1;
+  --color-hs-text: #1A1A1A;
+  --color-muted: #6B7280;
+  --color-border: #E5E2DB;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-pending: #F4A535;
+  --color-active: #2563EB;
+  --color-rejected: #EF4444;
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-inter);
+}
+
+:root {
+  --color-primary: #2563EB;
+  --color-accent: #F4A535;
+  --color-surface: #F8F6F1;
+  --color-text: #1A1A1A;
+  --color-muted: #6B7280;
+  --color-border: #E5E2DB;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-pending: #F4A535;
+  --color-active: #2563EB;
+  --color-rejected: #EF4444;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
+
+/* TipTap editor */
+.tiptap p.is-editor-empty:first-child::before {
+  color: var(--color-muted);
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}

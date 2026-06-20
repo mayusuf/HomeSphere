@@ -1,0 +1,60 @@
+[
+  {
+    "threadId": "thread_001",
+    "propertyId": "prop_001",
+    "participants": ["user_001", "owner_003"],
+    "propertyTitle": "Sunny 2-Bedroom Apartment in Midtown",
+    "lastMessage": "Sure, Saturday at 11am works for me!",
+    "lastMessageAt": "2025-07-22T15:00:00Z",
+    "unread": 1,
+    "messages": [
+      {
+        "id": "msg_001",
+        "senderId": "user_001",
+        "text": "Hi, I'm interested in your apartment. Is it still available?",
+        "sentAt": "2025-07-20T14:00:00Z"
+      },
+      {
+        "id": "msg_002",
+        "senderId": "owner_003",
+        "text": "Yes it's available! Would you like to schedule a viewing?",
+        "sentAt": "2025-07-20T16:00:00Z"
+      },
+      {
+        "id": "msg_003",
+        "senderId": "user_001",
+        "text": "That would be great. Are you free this weekend?",
+        "sentAt": "2025-07-22T10:00:00Z"
+      },
+      {
+        "id": "msg_004",
+        "senderId": "owner_003",
+        "text": "Sure, Saturday at 11am works for me!",
+        "sentAt": "2025-07-22T15:00:00Z"
+      }
+    ]
+  },
+  {
+    "threadId": "thread_002",
+    "propertyId": "prop_005",
+    "participants": ["user_001", "owner_004"],
+    "propertyTitle": "Charming 3-Bedroom Townhouse",
+    "lastMessage": "The lease term is minimum 6 months.",
+    "lastMessageAt": "2025-07-21T17:00:00Z",
+    "unread": 0,
+    "messages": [
+      {
+        "id": "msg_005",
+        "senderId": "user_001",
+        "text": "What is the minimum lease term for this property?",
+        "sentAt": "2025-07-21T14:00:00Z"
+      },
+      {
+        "id": "msg_006",
+        "senderId": "owner_004",
+        "text": "The lease term is minimum 6 months.",
+        "sentAt": "2025-07-21T17:00:00Z"
+      }
+    ]
+  }
+]

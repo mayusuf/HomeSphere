@@ -1,0 +1,38 @@
+[
+  {
+    "id": "inq_001",
+    "propertyId": "prop_001",
+    "userId": "user_001",
+    "message": "Hi, is this available for September? I'm very interested!",
+    "type": "inquiry",
+    "status": "pending",
+    "createdAt": "2025-07-20T14:00:00Z"
+  },
+  {
+    "id": "inq_002",
+    "propertyId": "prop_003",
+    "userId": "user_002",
+    "message": "Is the garden fully private or shared? Also, are pets allowed?",
+    "type": "inquiry",
+    "status": "responded",
+    "createdAt": "2025-07-18T09:00:00Z"
+  },
+  {
+    "id": "inq_003",
+    "propertyId": "prop_001",
+    "userId": "user_002",
+    "message": "I'd like to schedule a viewing this weekend if possible.",
+    "type": "appointment",
+    "status": "pending",
+    "createdAt": "2025-07-22T11:00:00Z"
+  },
+  {
+    "id": "inq_004",
+    "propertyId": "prop_005",
+    "userId": "user_001",
+    "message": "Is the property still available? I can sign a 12-month lease.",
+    "type": "inquiry",
+    "status": "pending",
+    "createdAt": "2025-07-21T16:00:00Z"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "prop_001",
+    "title": "Sunny 2-Bedroom Apartment in Midtown",
+    "descriptionHtml": "Bright, spacious apartment with city views and modern finishes. Recently renovated kitchen with stainless steel appliances. Walking distance to subway and major shopping centers.",
+    "houseType": "apartment",
+    "price": 1200,
+    "address": {
+      "street": "42 Maple Ave",
+      "city": "Springfield",
+      "state": "IL",
+      "zip": "62701"
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "images": ["/mock/property-1.jpg", "/mock/property-2.jpg"],
+    "status": "active",
+    "availableFrom": "2025-08-01",
+    "ownerId": "owner_003",
+    "ownerContact": "jane@example.com",
+    "listedDate": "2025-07-15T10:00:00Z",
+    "viewCount": 142
+  },
+  {
+    "id": "prop_002",
+    "title": "Cozy Single Room Near University",
+    "descriptionHtml": "Quiet, furnished single room in a shared house. Includes utilities and high-speed WiFi. Perfect for students or young professionals.",
+    "houseType": "single-room",
+    "price": 450,
+    "address": {
+      "street": "17 Oak Street",
+      "city": "Austin",
+      "state": "TX",
+      "zip": "78701"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "images": ["/mock/property-3.jpg"],
+    "status": "active",
+    "availableFrom": "2025-07-15",
+    "ownerId": "owner_004",
+    "ownerContact": "mark@example.com",
+    "listedDate": "2025-07-01T08:00:00Z",
+    "viewCount": 98
+  },
+  {
+    "id": "prop_003",
+    "title": "Spacious Family House with Garden",
+    "descriptionHtml": "Beautiful 4-bedroom family home with a private garden, 2-car garage, and open-plan living area. Located in a quiet residential neighborhood with excellent schools nearby.",
+    "houseType": "house",
+    "price": 2800,
+    "address": {
+      "street": "120 Pine Road",
+      "city": "Portland",
+      "state": "OR",
+      "zip": "97201"
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "images": ["/mock/property-4.jpg", "/mock/property-5.jpg"],
+    "status": "active",
+    "availableFrom": "2025-09-01",
+    "ownerId": "owner_003",
+    "ownerContact": "jane@example.com",
+    "listedDate": "2025-06-20T12:00:00Z",
+    "viewCount": 201
+  },
+  {
+    "id": "prop_004",
+    "title": "Modern Studio in Downtown District",
+    "descriptionHtml": "Stylish studio apartment in the heart of downtown. Floor-to-ceiling windows, premium finishes, and rooftop access. Ideal for young professionals.",
+    "houseType": "apartment",
+    "price": 900,
+    "address": {
+      "street": "8 Harbor Blvd",
+      "city": "Miami",
+      "state": "FL",
+      "zip": "33101"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "images": ["/mock/property-6.jpg"],
+    "status": "active",
+    "availableFrom": "2025-08-15",
+    "ownerId": "owner_005",
+    "ownerContact": "carlos@example.com",
+    "listedDate": "2025-07-10T09:00:00Z",
+    "viewCount": 175
+  },
+  {
+    "id": "prop_005",
+    "title": "Charming 3-Bedroom Townhouse",
+    "descriptionHtml": "Well-maintained townhouse with private patio, updated appliances, and in-unit laundry. Close to parks, restaurants, and public transit.",
+    "houseType": "house",
+    "price": 1950,
+    "address": {
+      "street": "55 Elm Court",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37201"
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "images": ["/mock/property-1.jpg", "/mock/property-3.jpg"],
+    "status": "active",
+    "availableFrom": "2025-08-01",
+    "ownerId": "owner_004",
+    "ownerContact": "mark@example.com",
+    "listedDate": "2025-07-05T14:00:00Z",
+    "viewCount": 134
+  },
+  {
+    "id": "prop_006",
+    "title": "Luxury Penthouse with Panoramic Views",
+    "descriptionHtml": "Exclusive 3-bedroom penthouse on the 25th floor with a wrap-around terrace, concierge service, and private gym access. Unmatched city skyline views.",
+    "houseType": "apartment",
+    "price": 4500,
+    "address": {
+      "street": "1 Skyline Tower",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60601"
+    },
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "images": ["/mock/property-5.jpg", "/mock/property-6.jpg"],
+    "status": "active",
+    "availableFrom": "2025-10-01",
+    "ownerId": "owner_005",
+    "ownerContact": "carlos@example.com",
+    "listedDate": "2025-07-12T16:00:00Z",
+    "viewCount": 312
+  },
+  {
+    "id": "prop_007",
+    "title": "Budget-Friendly Room Near Transit",
+    "descriptionHtml": "Affordable single room in a clean, well-managed house. Shared common areas, fully stocked kitchen, and fast WiFi. Easy access to bus and metro lines.",
+    "houseType": "single-room",
+    "price": 350,
+    "address": {
+      "street": "33 Birch Lane",
+      "city": "Atlanta",
+      "state": "GA",
+      "zip": "30301"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "images": ["/mock/property-2.jpg"],
+    "status": "active",
+    "availableFrom": "2025-07-20",
+    "ownerId": "owner_003",
+    "ownerContact": "jane@example.com",
+    "listedDate": "2025-06-28T11:00:00Z",
+    "viewCount": 67
+  },
+  {
+    "id": "prop_008",
+    "title": "Newly Listed 2-Bed Near Beach",
+    "descriptionHtml": "Fresh listing! Spacious 2-bedroom apartment just 5 minutes walk from the beach. Private balcony, updated kitchen, and covered parking.",
+    "houseType": "apartment",
+    "price": 1600,
+    "address": {
+      "street": "22 Ocean Drive",
+      "city": "San Diego",
+      "state": "CA",
+      "zip": "92101"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "images": ["/mock/property-4.jpg"],
+    "status": "pending",
+    "availableFrom": "2025-09-01",
+    "ownerId": "owner_004",
+    "ownerContact": "mark@example.com",
+    "listedDate": "2025-07-18T10:00:00Z",
+    "viewCount": 12
+  }
+]

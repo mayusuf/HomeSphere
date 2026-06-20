@@ -1,0 +1,343 @@
+{
+  "info": {
+    "name": "HomeSphere API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "HomeSphere Backend REST API"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "auth", "login"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"user@example.com\",\n  \"password\": \"password123\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Customers",
+      "item": [
+        {
+          "name": "Register Customer",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/customers", "host": ["{{baseUrl}}"], "path": ["api", "customers"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"password\": \"password123\",\n  \"phoneNumber\": \"+213555123456\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Get All Customers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "{{baseUrl}}/api/customers", "host": ["{{baseUrl}}"], "path": ["api", "customers"] }
+          }
+        },
+        {
+          "name": "Get Customer by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/customers/:customerId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "customers", ":customerId"],
+              "variable": [{ "key": "customerId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Update Customer",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/customers/:customerId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "customers", ":customerId"],
+              "variable": [{ "key": "customerId", "value": "" }]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"password\": \"password123\",\n  \"phoneNumber\": \"+213555123456\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Delete Customer",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/customers/:customerId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "customers", ":customerId"],
+              "variable": [{ "key": "customerId", "value": "" }]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Owners",
+      "item": [
+        {
+          "name": "Register Owner",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/owners", "host": ["{{baseUrl}}"], "path": ["api", "owners"] },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Jane\",\n  \"lastName\": \"Smith\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"password123\",\n  \"phoneNumber\": \"+213555654321\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Get All Owners",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "{{baseUrl}}/api/owners", "host": ["{{baseUrl}}"], "path": ["api", "owners"] }
+          }
+        },
+        {
+          "name": "Get Owner by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/owners/:ownerId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "owners", ":ownerId"],
+              "variable": [{ "key": "ownerId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Update Owner",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/owners/:ownerId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "owners", ":ownerId"],
+              "variable": [{ "key": "ownerId", "value": "" }]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Jane\",\n  \"lastName\": \"Smith\",\n  \"email\": \"jane@example.com\",\n  \"password\": \"password123\",\n  \"phoneNumber\": \"+213555654321\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Delete Owner",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/owners/:ownerId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "owners", ":ownerId"],
+              "variable": [{ "key": "ownerId", "value": "" }]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Properties",
+      "item": [
+        {
+          "name": "Create Property",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/owners/:ownerId/properties",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "owners", ":ownerId", "properties"],
+              "variable": [{ "key": "ownerId", "value": "" }]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"descriptionHtml\": \"<p>Beautiful apartment with city view</p>\",\n  \"price\": 1500.00,\n  \"bedrooms\": 3,\n  \"bathrooms\": 2,\n  \"houseType\": \"APARTMENT\",\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Algiers\",\n    \"state\": \"Algiers\",\n    \"zipCode\": \"16000\"\n  }\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Get All Properties",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "{{baseUrl}}/api/properties", "host": ["{{baseUrl}}"], "path": ["api", "properties"] }
+          }
+        },
+        {
+          "name": "Get Property by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/properties/:propertyId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "properties", ":propertyId"],
+              "variable": [{ "key": "propertyId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Get Properties by Owner",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/owners/:ownerId/properties",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "owners", ":ownerId", "properties"],
+              "variable": [{ "key": "ownerId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Update Property",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/properties/:propertyId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "properties", ":propertyId"],
+              "variable": [{ "key": "propertyId", "value": "" }]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"descriptionHtml\": \"<p>Updated description</p>\",\n  \"price\": 1800.00,\n  \"bedrooms\": 3,\n  \"bathrooms\": 2,\n  \"houseType\": \"APARTMENT\",\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Algiers\",\n    \"state\": \"Algiers\",\n    \"zipCode\": \"16000\"\n  }\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Delete Property",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/properties/:propertyId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "properties", ":propertyId"],
+              "variable": [{ "key": "propertyId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Search Properties by City",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/properties/search?city=Algiers",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "properties", "search"],
+              "query": [
+                { "key": "city", "value": "Algiers" },
+                { "key": "maxPrice", "value": "2000", "disabled": true },
+                { "key": "bedrooms", "value": "3", "disabled": true }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admins",
+      "item": [
+        {
+          "name": "Get All Admins",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": { "raw": "{{baseUrl}}/api/admins", "host": ["{{baseUrl}}"], "path": ["api", "admins"] }
+          }
+        },
+        {
+          "name": "Get Admin by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/admins/:adminId",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "admins", ":adminId"],
+              "variable": [{ "key": "adminId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Deactivate User",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/admins/users/:userId/deactivate",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "admins", "users", ":userId", "deactivate"],
+              "variable": [{ "key": "userId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Approve Property",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/admins/properties/:propertyId/approve",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "admins", "properties", ":propertyId", "approve"],
+              "variable": [{ "key": "propertyId", "value": "" }]
+            }
+          }
+        },
+        {
+          "name": "Get Pending Properties",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/admins/properties/pending",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "admins", "properties", "pending"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

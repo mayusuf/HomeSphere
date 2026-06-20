@@ -1,0 +1,68 @@
+[
+  {
+    "user_id": "user_001",
+    "first_name": "John",
+    "last_name": "Smith",
+    "email": "john@example.com",
+    "role": "CUSTOMER",
+    "savedProperties": ["prop_001", "prop_007"],
+    "createdAt": "2025-06-01T08:00:00Z",
+    "status": "active",
+    "phone_number": "+1 555-0101"
+  },
+  {
+    "user_id": "user_002",
+    "first_name": "Emily",
+    "last_name": "Chen",
+    "email": "emily@example.com",
+    "role": "CUSTOMER",
+    "savedProperties": ["prop_003", "prop_006"],
+    "createdAt": "2025-06-15T10:00:00Z",
+    "status": "active",
+    "phone_number": "+1 555-0102"
+  },
+  {
+    "user_id": "owner_003",
+    "first_name": "Jane",
+    "last_name": "Williams",
+    "email": "jane@example.com",
+    "role": "OWNER",
+    "savedProperties": [],
+    "createdAt": "2025-05-10T08:00:00Z",
+    "status": "active",
+    "phone_number": "+1 555-0103"
+  },
+  {
+    "user_id": "owner_004",
+    "first_name": "Mark",
+    "last_name": "Johnson",
+    "email": "mark@example.com",
+    "role": "OWNER",
+    "savedProperties": [],
+    "createdAt": "2025-05-22T09:00:00Z",
+    "status": "active",
+    "phone_number": "+1 555-0104"
+  },
+  {
+    "user_id": "owner_005",
+    "first_name": "Carlos",
+    "last_name": "Rivera",
+    "email": "carlos@example.com",
+    "role": "OWNER",
+    "savedProperties": [],
+    "createdAt": "2025-06-05T11:00:00Z",
+    "status": "active",
+    "phone_number": "+1 555-0105"
+  },
+  {
+    "user_id": "admin_001",
+    "first_name": "Admin",
+    "last_name": "User",
+    "email": "admin@homesphere.com",
+    "role": "ADMIN",
+    "savedProperties": [],
+    "createdAt": "2025-01-01T00:00:00Z",
+    "status": "active",
+    "phone_number": "+1 555-0100"
+  }
+]
